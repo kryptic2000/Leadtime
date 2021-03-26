@@ -1,5 +1,5 @@
 <?php
-namespace Mageplaza\HelloWorld\Setup;
+namespace Kryptic2000\Leadtime\Setup;
 
 use Magento\Eav\Setup\EavSetup;
 use Magento\Eav\Setup\EavSetupFactory;
