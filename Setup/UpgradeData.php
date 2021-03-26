@@ -55,7 +55,7 @@ class UpgradeData implements UpgradeDataInterface
                                         5 => 'Osäker leveranstid'
                                       )
                                   ),
-				'attribute_set_id' => 'Default'
+				'attribute_set_id' => 4
 
                         ]
                 );
