@@ -2,14 +2,18 @@
 
 $stockQty = $this->getProduct()->getExtensionAttributes()->getStockItem()->getQty();
 $inStock = $this->getProduct()->getExtensionAttributes()->getStockItem()->getIsInStock();
+$objLeadtime = array($this->getProduct()->getAttributeText('source_leadtime'));
 
 if (!$inStock) {
   $leadtime = 11;
 } elseif ($stockQty>=1) {
   $leadtime = 10;
 } else {
-  $leadtime = $this->getProduct()->getAttributeText('source_leadtime');
+  foreach($objLeadtime as $key => $value) {
+    $leadtime = $value;
+  }
 }
+
 
 switch($leadtime) {
   case 0:
